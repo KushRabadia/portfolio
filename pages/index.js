@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import TypingAnimation from "../src/components/TypingAnimation";
 import Layout from "../src/layout/Layout";
 
@@ -100,10 +101,7 @@ const IndexPersonal = () => {
         <div className="centrize full-width">
           <div className="vertical-center">
             <div className="started-content">
-              <div
-                className="logo"
-                style={{ backgroundImage: "url(images/kush.png)" }}
-              />
+              <div className="logo"/>
               <h1 class="h-title">
 								<div id="MyClockDisplay" class="clock">
                   {time}<p/>
@@ -136,10 +134,11 @@ const IndexPersonal = () => {
                   </a>
 								</div>
 
-								
-								<a href="works.html" class="text-italic project">
-									Projects <span class="icon fas fa-arrow-right"></span>
-								</a>
+								<Link href="/projects">
+                  <a class="text-italic project">
+                    Projects <span class="icon fas fa-arrow-right"></span>
+                  </a>
+                </Link>
 							</h1>
               <TypingAnimation extraClassName={"typed-subtitle"} />
               <span className="typed-subtitle" />

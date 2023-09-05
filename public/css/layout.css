@@ -104,10 +104,23 @@
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
   white-space: nowrap;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
+  animation: logoAnime 2s ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoAnime {
+  from  {
+    transform: translateY(1000%);
+    -webkit-transform: translateY(1000%);
+    -moz-transform: translateY(1000%);
+    -o-transform: translateY(1000%);
+  }
+  to {
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
 }
 
 .header .logo img {
@@ -625,11 +638,27 @@
 	left: -700px;
 	width: 740px;
 	height: 600px;
+  background-image: url('../images/kush.png');
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: 500% 0;
 	background-size: contain;
 	-webkit-filter: drop-shadow(1px 1px 5px rgba(75,255,165,0.7));
   filter: drop-shadow(1px 1px 5px rgba(75,255,165,0.7));
+  animation: logoAnimeBg 2s ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoAnimeBg {
+  from {
+    background-position: 500% 0;
+    opacity: 0%;
+    transform: rotate(-180deg);
+  }
+  to {
+    background-position: center center;
+    opacity: 100%;
+    transform: rotate(360deg);
+  }
 }
 
 .section.started .started-content .h-title {

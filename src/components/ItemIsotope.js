@@ -110,7 +110,7 @@ const ItemIsotope = () => {
       <div className="box-items portfolio-items">
         <div className="box-item f-video">
           <div className="image">
-            <a href="https://www.atlantismall.shop/" className="has-popup-link hover-animated" target="_blank" rel="noreferrer">
+            <a href="https://atlantismall.kushrabadia.com/" className="has-popup-link hover-animated" target="_blank" rel="noreferrer">
               <h2>ATLANTIS MALL</h2>
               <span className="info circle">
                 <span className="centrize full-width">

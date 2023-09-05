@@ -1,9 +1,8 @@
 {
   "projects.js -> ../src/components/ItemIsotope": {
-    "id": 2141,
+    "id": "projects.js -> ../src/components/ItemIsotope",
     "files": [
-      "static/chunks/391.d8269ff9468ed8b3.js",
-      "static/chunks/141.95ee1fc7c21c4960.js"
+      "static/chunks/src_components_ItemIsotope_js.js"
     ]
   }
 }
