@@ -389,10 +389,23 @@
   .header .logo {
     position: relative;
     top: 0;
-    transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -o-transform: translateY(0%);
+    animation: logoAnime 2s ease 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logoAnime {
+    from  {
+      transform: translateY(1000%);
+      -webkit-transform: translateY(1000%);
+      -moz-transform: translateY(1000%);
+      -o-transform: translateY(1000%);
+    }
+    to {
+      transform: translateY(0%);
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -o-transform: translateY(0%);
+    }
   }
 
   .header .menu-btn {
@@ -652,7 +665,7 @@
   from {
     background-position: 500% 0;
     opacity: 0%;
-    transform: rotate(-180deg);
+    transform: rotate(180deg);
   }
   to {
     background-position: center center;
@@ -1087,9 +1100,20 @@
 		margin-left: 0;
 		margin-top: 0;
 		left: 50vw;
-		top: 33vh;
+		top: -66vh;
 		bottom: auto;
+    animation: titleAnimeDesk 2s ease 2s;
+    animation-fill-mode: forwards;
 	}
+
+  @keyframes titleAnimeDesk {
+    from  {
+      top: -66vh;
+    }
+    to {
+      top: 33vh;
+    }
+  }
 }
 
 /* section started tablet */
@@ -1139,7 +1163,7 @@
   .section.started .started-content .logo {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: -5%;
     width: 110vw;
     height: 62vh;
     transform: translate(-50%, -0%);
@@ -1226,10 +1250,24 @@
   .section.started .started-content .logo {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 200%;
     width: 110vw;
     height: 62vh;
-    transform: translate(-50%, -0%);
+    animation: logoAnimeBgTab 2s ease 2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logoAnimeBgTab {
+    from {
+      left: 100%;
+      opacity: 0%;
+      transform: rotate(180deg);
+    }
+    to {
+      left: -10%;
+      opacity: 100%;
+      transform: rotate(360deg);
+    }
   }
 
   .section.started.personal .started-content .h-title {
